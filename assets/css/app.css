@@ -5020,7 +5020,7 @@ a.forgot-password {
 }
 .zubuz-account-checkbox label:before {
   content: "";
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   background-color: transparent;
   border: 1.5px solid #7F8995;
   padding: 7px;
