@@ -104,11 +104,12 @@
 
         </section>
 
+        <div id="launchModal" class="modal">
         <section class="zubuz-cta-section2">
           <div class="container">
             <div class="zubuz-cta-wrap" style="background-image: url(assets/images/launching.webp)">
               <div class="zubuz-cta-content">
-                
+                <span class="close" onclick="closeModal()">&times;</span>
                 <h2>Launching 2025</h2>
                 <h2>Register Today</h2>
                 <div class="zubuz-subscribe-two">
@@ -121,6 +122,8 @@
             </div>
           </div>
         </section>
+        </div>
+
 
 
         <!-- <section class="zubuz-cta-section2">
@@ -467,7 +470,14 @@
     </div>
   </footer>
 
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("launchModal").style.display = "flex";
+    });
+    function closeModal() {
+        document.getElementById("launchModal").style.display = "none";
+    }
+</script>
 
 
 
